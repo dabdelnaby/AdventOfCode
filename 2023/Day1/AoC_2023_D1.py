@@ -17,7 +17,7 @@
 
 ## PROBLEM 1 ##
 #   use grep to remove letters
-#   gunzip -c Data/day1input.txt.gz | grep "[1234567890]" | sed 's/[a-z]//g' > day1test.txt.gz
+#   sed 's/[a-z]//g' > day1test.txt.gz
 #   use cut to select 1st and last numbers
 #   create loop to add all 
 
@@ -34,7 +34,7 @@ def day1pt1():
 day1pt1()
 ## PROBLEM 2 ##
 # in CLI
-# cat Data/day1input.txt | sed 's/one/1/g' | sed 's/two/2/g' | sed 's/three/3/g' | sed 's/four/4/g' | sed 's/five/5/g' | sed 's/six/6/g' | sed 's/seven/7/g' | sed 's/eight/8/g' | sed 's/nine/9/g' | sed 's/[a-z]//g' > day1part2.txt
+# cat Data/day1input.txt | sed 's/one/o1e/g' | sed 's/two/t2o/g' | sed 's/three/t3e/g' | sed 's/four/f4r/g' | sed 's/five/f5e/g' | sed 's/six/s6x/g' | sed 's/seven/s7n/g' | sed 's/eight/e8t/g' | sed 's/nine/n9e/g' | sed 's/[a-z]//g' > day1part2.txt
 
 def day1pt2():
     fp2 = open('day1part2.txt','r')
